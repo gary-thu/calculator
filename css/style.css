@@ -1,0 +1,105 @@
+.box {
+  font-family: 'Orbitron', sans-serif;
+  width: 415px;
+  height: 750px;
+  margin: 20px auto;
+  border: 1px solid #9e9b97;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), inset -1px -6px 12px 0.1px black;
+  border-radius: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background: lightgray;
+}
+
+.screen {
+/*  height: 60px;*/
+  height: 300px;
+  width: 375px;
+  border: 1px solid #7c877f;
+  background: #c7d3c5;
+  margin: 25px 20px 5px 20px;
+  border-radius: 6px;
+}
+
+.main-screen {
+  height: 22px;
+  padding: 10px 5px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.sub-screen {
+  height: 40px;
+  padding: 10px 5px;
+  font-size: 12px;
+  text-align: right;
+}
+
+.draw-screen {
+  height: 200px;
+}
+#play {
+  border:2px solid black;
+  margin:auto 11px;
+}
+
+.draw-info {
+  text-align: center;
+}
+
+.buttons {
+  margin: 10px auto;
+}
+
+.exchangeWidget {
+  text-align: center;
+}
+
+.other {
+margin: 10px auto;
+}
+
+#shell {
+/*  margin-left: 20px;*/
+  height: 30px;
+  width: 180px;
+}
+
+button {
+  margin: 5px;
+  padding: 3px 10px;
+  width: 50px;
+  height: 30px;
+  border: none;
+  box-shadow: 1px 2px #666;
+}
+
+.btn-reset {
+  width: 130px;
+  margin-right: 15px;
+}
+
+.btn-family {
+  background-color: black;
+  color: white;
+}
+
+button:focus {outline:0 !important;}
+
+button:active {
+  box-shadow: none;
+  transform: translateY(4px);
+}
+
+.btn-zero {
+  width: 113px;
+  margin-right: 7px;
+}
+
+.btn-equal {
+  position: absolute;
+  margin-left: 10px;
+  height: 75px;
+}

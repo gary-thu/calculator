@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <meta charset="utf-8">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+  <script language="javascript" type="text/javascript" src="http://people.iola.dk/olau/flot/jquery.js"></script>
+  <script language="javascript" type="text/javascript" src="http://people.iola.dk/olau/flot/jquery.flot.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/relationship.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript" src = "js/snake.js"></script>
+</head>
+
+<body>
+  <div class="box">
+    <div class="screen">
+      <div class="main-screen" id="output"></div>
+      <div class="sub-screen" id="output2"></div>
+      <div class="draw-screen" id="output3"></div>
+      <canvas id="play" width="350" height="200" style="background: #626462; display: none;"></canvas>  
+    </div>
+
+    <input type="hidden" id="num1">
+    <input type="hidden" id="operator">
+    <input type="hidden" id="num2">
+    <input type="hidden" id="temp">
+
+    <div class="draw-info">
+      from:<input id="from" type="text" value="0" size="4"/>
+      to:<input id="to" type="text" value="10" size="4"/>
+      step:<input id="step" type="text" value="0.1" size="4"/>
+    </div>
+
+    <div id="exchangeWidget-0" class="exchangeWidget"></div>
+
+    <div class="container-fluid">
+      <div class="buttons">
+        <button class="btn-clear btn btn-danger" id="clearButton">AC</button>
+        <button class="btn btn-warning" id="deleteButton">CE</button>
+        <button class="btn-operate btn btn-default" value="/">/</button>
+        <button class="btn-operate btn btn-default" value="*">x</button>
+        <button class="btn btn-family" data-value="爸爸">父</button>
+        <button class="btn btn-family" data-value="妈妈">母</button>
+      </div>
+
+      <div class="buttons">
+        <button class="nums btn btn-default" value="7">7</button>
+        <button class="nums btn btn-default" value="8">8</button>
+        <button class="nums btn btn-default" value="9">9</button>
+        <button class="btn-operate btn btn-default" value="-">-</button>
+        <button class="btn btn-family" data-value="老公">夫</button>
+        <button class="btn btn-family" data-value="老婆">妻</button>
+      </div>
+
+      <div class="buttons">
+        <button class="nums btn btn-default" value="4">4</button>
+        <button class="nums btn btn-default" value="5">5</button>
+        <button class="nums btn btn-default" value="6">6</button>
+        <button class="btn-operate btn btn-default" value="+">+</button>
+        <button class="btn btn-family" data-value="儿子">子</button>
+        <button class="btn btn-family" data-value="女儿">女</button>
+      </div>
+
+      <div class="buttons">
+        <button class="nums btn btn-default" value="1">1</button>
+        <button class="nums btn btn-default" value="2">2</button>
+        <button class="nums btn btn-default" value="3">3</button>
+        <button class="btn btn-family" data-value="哥哥">兄</button>
+        <button class="btn btn-family" data-value="弟弟">弟</button>
+        <button class="btn-equal btn btn-info" id="resultButton">=</button>
+      </div>
+
+      <div class="buttons">
+        <button class="nums btn-zero btn btn-default" value="0">0</button>
+        <button class="nums btn btn-default" value=".">.</button>
+        <button class="btn btn-family" data-value="姐姐">姐</button>
+        <button class="btn btn-family" data-value="妹妹">妹</button>
+      </div>
+
+      <div class="other">
+        <textarea id="shell">
+        </textarea>
+        <button class="buttons btn btn-play">P</button>
+        <button class="buttons btn btn-reset btn-success">RE</button>
+    </div>
+
+    </div>
+
+  </div>
+  <script type="text/javascript" src = "js/drawGraph.js"></script>
+  <script type="text/javascript" src="js/exchangeWidget.js"></script>
+</body>
+</html>
+
