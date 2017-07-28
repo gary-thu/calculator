@@ -87,7 +87,7 @@ exchangeRates.populateWidget = function(element) {
 
 // check the dom for elements with the exchangeWidget prefix
 exchangeRates.init = function() {
-    exchangeRates.populateDataLayer("http://api.fixer.io/latest");
+    exchangeRates.populateDataLayer("https://api.fixer.io/latest");
     var i = 0;
     while (!!document.getElementById("exchangeWidget-" + i)) {
         document.getElementById("exchangeWidget-" + i).innerHTML = exchangeRates.populateWidget("exchangeWidget-" + i);
